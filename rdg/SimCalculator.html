@@ -1,0 +1,36 @@
+<head>
+	<title>Divinagracia</title>
+		<script>
+		       function computation(){
+			    var num1 = parseInt(document.getElementById("number1").value);
+			    var num2 = parseInt(document.getElementById("number2").value);
+				var sum = num1 + num2;
+		        document.getElementById("sum").value = sum;
+				var difference = num1 - num2;
+				document.getElementById("difference").value = difference;
+				var product = num1 * num2;
+				document.getElementById("product").value = product;
+				var quotient = num1 / num2;
+				document.getElementById("quotient").value = quotient;
+		}
+		</script>
+	<body>
+	    <table style="border:2px solid black" border="0" bgcolor="pink" align="center" width="900">
+	<tr>
+		 <td>
+		 1st Number: <input type="text" id="number1">
+		 2st Number: <input type="text" id="number2">
+		 </td>
+	</tr>
+	<tr>
+		 <td>
+		 <input type="button" value="Calculate" onclick="computation()">
+		 Result: <input type="text" id="sum">
+		         <input type="text" id="difference">
+		         <input type="text" id="product">
+		         <input type="text" id="quotient">	
+	     </td>
+	</tr>
+		</table>
+	</body>
+</html>

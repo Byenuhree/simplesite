@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>
+			Sample Dialog
+		</title>
+		<script>
+			function getDialog()
+			{
+				var retVal = confirm("Do you want to pass the subject?");
+				if (retVal == true)
+				{
+				document.write("Good, you passed the subject!");
+				return true;
+				}
+				else
+				{
+				document.write("Sorry, you failed the subject!");
+				return false;
+				};
+			}
+		</script>
+	</head>
+	<body>
+		Click the given button:<br>
+		<input type="button" value="Click me!" onclick="getDialog()">
+		
+	</body>
+</html>

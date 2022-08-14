@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			Odd and Even
+		</title>
+		<script>
+		
+		 function isCheck(){
+		   var x = Number(document.getElementById("oddeven").value);
+		   
+		 if ( x % 2 === 0){
+		    document.getElementById("showmsg").innerHTML = "Goods pare! number&nbsp;"  +x+ "&nbsp;is even pare ";
+		  }
+		  else{
+		  document.getElementById("showmsg").
+		  innerHTML = " Gg pare! number&nbsp;"  +x+ " &nbsp;is odd pare ";
+		  }
+		  if(x ==""){
+		  document.getElementById("showmsg").
+		  innerHTML = "awts gege!";
+		  }
+		}
+		
+		</script>
+	</head>
+	<body>
+	<table style="border:2px solid black" border="0" bgcolor="pink" align="center" width="400">
+	<tr>
+	    <td>
+	        Enter a Number<input type="number" id="oddeven"> <br>
+	        <input type="button" value="Click here Pare!" onclick="isCheck()">
+		    <label id="showmsg"></label>
+		</td>
+    </tr>			
+	</body>
+</html>
